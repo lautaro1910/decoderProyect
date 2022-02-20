@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Coder/Decoder</title>
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+    <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+    <script src="js/matrixEffect2.js"></script>
+
+    <h1 class="titulo">Código Secreto</h1>
+
+    <main class="main">
+      <div class="formBox">
+        <h2 id="primerMensaje">Escriba su mensaje: </h2>
+        <form action="">
+          <label for="inputTexto" id="mensajeAdvertencia">Nota: Solo letras minúsculas, sin acento ni caracteres especiales.</label>
+          <input class="textInput" type="text" name="inputTextoA" id="inputTextoA" placeholder="Ingrese el texto aqui">
+          <span id="errorMensaje" class="invisible"></span>
+          <div class="botones">
+            <input class="boton" type="submit" value="Encriptar!" id="botonEncriptar">
+            <input class="boton" type="submit" value="Desencriptar!" id="botonDesencriptar">  
+          </div>
+        </form>
+      </div>
+    
+      <div class="mensajeBox">
+        <h2 id="mensaje">Mensaje encriptado:</h2>
+        <input class="textOutput" type="text" id="mensajeAMostrar" placeholder="Su mensaje se mostrara aqui">
+        <div class="botones">
+          <input class="boton" type="submit" value="copiar" id="botonCopy">
+        </div>
+      </div>
+    </main>
+
+    <script src="js/validarYerrores.js"></script>
+    <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/copyf.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <footer>
+      <p>Copyright © 2022 Soria Lautaro, <a href="https://www.linkedin.com/in/lautaro-soria/" target="_blank">Linkedin</a> <br>Background by <a href="https://dev.to/gnsp/making-the-matrix-effect-in-javascript-din" target="_blank">Ganesh Prasad</a></p>
+    </footer>
+  </body>
+</html>
